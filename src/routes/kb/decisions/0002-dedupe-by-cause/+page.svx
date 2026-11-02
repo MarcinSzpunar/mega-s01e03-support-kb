@@ -4,7 +4,7 @@ title: '0002 · Match causes before merging reports'
 owner: Marcin Szpunar
 status: proposed
 reviewed: '2026-11-02'
-signature: 'Marcin Szpunar · S01E03 · 2026-11-02'
+signature: 'v1.eyJzdWIiOiIyMzY3IiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTM2NDExMDQsImV4cCI6MTc5MzcyNzUwNH0.4sXYr55UdwFQHUFDg36STe2H28Mo5lvjT2VEe1abxvo'
 ---
 
 <script>
