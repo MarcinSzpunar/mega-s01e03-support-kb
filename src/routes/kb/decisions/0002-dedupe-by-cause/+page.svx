@@ -1,0 +1,26 @@
+---
+layout: runbook
+title: '0002 · Match causes before merging reports'
+owner: Marcin Szpunar
+status: proposed
+reviewed: '2026-11-02'
+signature: 'Marcin Szpunar · S01E03 · 2026-11-02'
+---
+
+<script>
+  import RenderStamp from '#lib/kb/RenderStamp.svelte';
+</script>
+
+## Context
+
+The [review of #4471](/kb/incidents/4471-review) found separate parser and form-hint causes in one ticket. Subject-only matching concealed that distinction. The executable dedupe explorer already compares tenant-specific causes instead of subjects.
+
+## Proposed decision
+
+Replace the operational rule in [decision 0001](/kb/decisions/0001-dedupe-by-subject) with evidence-based matching: check tenant locale, booking form, channel and reported behavior before merging. Use subject similarity for discovery, not proof. Deduplicate export rows by report ID independently of merging related reports into a ticket.
+
+## Consequences
+
+The desk must read enough evidence to distinguish causes. Unknown cases remain visibly unresolved. Existing accepted decisions are not rewritten; this proposal requires desk acceptance before it replaces their policy.
+
+<RenderStamp {signature} />
